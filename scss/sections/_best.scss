@@ -1,0 +1,70 @@
+    .second-section {
+        width: 100%;
+        height: 100%;
+        min-height: 650px;
+        background: url(../../img/bg/best-bg.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        min-width: 940px;
+        overflow: hidden;
+    }
+    
+    .center {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 940px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .head-text {
+        font-family: Gagalin, sans-serif;
+        font-size: 72px;
+        color: #2f3234;
+        line-height: 64px;
+        margin-top: -10%;
+    }
+    
+    .ingradients {
+        display: flex;
+        list-style: none;
+        margin-top: 87px;
+    }
+    
+    .ingradients__item {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        align-items: center;
+        width: 35%;
+    }
+    
+    .ingradients__description--padd {
+        padding: 0 23px;
+    }
+    
+    .ingradients__title {
+        font: 300 24.1px Lifehack;
+        color: #2f3234;
+        line-height: 28.11px;
+        width: 314px;
+    }
+    
+    .ingradients__description {
+        font: 300 14.03px Ubuntu;
+        color: #2f3234;
+        margin-top: 18px;
+        line-height: 24px;
+        opacity: .5;
+        padding-left: 2px;
+    }
+    
+    .ingradients__logo {
+        margin-bottom: 28px;
+    }
+    
+    .ingradients__logo--natural {
+        margin-bottom: 40px;
+    }
