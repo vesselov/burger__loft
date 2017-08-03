@@ -63,8 +63,7 @@ ul {
 .wrapper {
   width: 100%;
   height: 100%;
-  position: relative;
-  min-height: 0; }
+  position: relative; }
 
 .maincontent {
   height: 100%;
@@ -188,7 +187,7 @@ ul {
       -ms-flex-align: center;
           align-items: center; }
 
-.hero__img--top {
+.hero__pic {
   margin: -87px 0 0 15px; }
 
 .next-page {
@@ -263,37 +262,19 @@ ul {
   line-height: 1;
   letter-spacing: -1px; }
 
-.second-section {
+.best {
   width: 100%;
   height: 100%;
   min-height: 650px;
-  background: url(../../img/bg/best-bg.png) 0 0 no-repeat;
-  background-size: 100% 100%;
+  background: url(../../img/bg/best-bg.png) center center no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 940px;
   overflow: hidden; }
-
-.center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 940px;
-  align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
 
 .head-text {
   font-family: Gagalin, sans-serif;
@@ -431,3 +412,121 @@ ul {
   transition: .5s; }
   .review__view:hover {
     background-color: #232527; }
+
+.team {
+  background: url(../../img/content/team/team.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  position: relative; }
+
+.team-right {
+  background: #343739;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  opacity: .9; }
+
+.team-content {
+  padding-top: 48px;
+  margin-left: 90px; }
+
+.accordion {
+  margin-left: 6px;
+  list-style: none; }
+
+.team-content__text {
+  color: #f8b43a;
+  font: 700 72px Gagalin;
+  padding-bottom: 64px; }
+
+.accordion__list {
+  padding-bottom: 30px; }
+
+.accordion__item {
+  cursor: pointer; }
+
+.accordion__title {
+  color: #fff;
+  font: 700 14px Gagalin;
+  cursor: pointer;
+  margin-left: -9px; }
+  .accordion__title:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 6px solid transparent;
+    border-top-color: #f8b43a;
+    border-bottom: none;
+    margin-right: 6px;
+    vertical-align: middle;
+    display: inline-block; }
+
+.accordion__crew {
+  margin-top: 10px;
+  display: none; }
+
+.accordion__img {
+  width: 100px;
+  height: 100px;
+  background: url(../../img/content/team/aphex.png) -12px -1px no-repeat;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px; }
+
+.accordion__description {
+  display: inline-block;
+  color: white;
+  max-width: 233px;
+  vertical-align: top;
+  margin: -2px 0 0 17px; }
+
+.accordion__job {
+  font: 700 14px Ubuntu;
+  padding-bottom: 16px; }
+
+.accordion__text {
+  font: 300 14px Ubuntu;
+  line-height: 23px; }
+
+.accordion__list {
+  margin-bottom: 5px; }
+  .accordion__list.active .accordion__crew {
+    display: block; }
+  .accordion__list.active .accordion__title {
+    color: #f8b43a; }
+    .accordion__list.active .accordion__title:before {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      margin-top: -5px; }
+
+.menu {
+  background: url(../../img/content/menu/Rectangle4.jpg) 0 0 no-repeat;
+  background-size: 100% 100%; }
+
+.menu__text {
+  color: #fff;
+  font: 700 72px Gagalin;
+  padding-bottom: 64px; }
+
+.menu__title {
+  width: 80px;
+  height: 100%; }
+
+.map {
+  width: 100%;
+  height: 100%; }
+
+.footer {
+  min-width: 940px;
+  height: 77px;
+  padding-top: 10px;
+  background: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/*# sourceMappingURL=main.css.map */

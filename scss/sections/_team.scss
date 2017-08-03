@@ -1,0 +1,105 @@
+    .team {
+        background: url(../../img/content/team/team.jpg) center center no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+    }
+    
+    .team-right {
+        background: #343739;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        opacity: .9;
+    }
+    
+    .team-content {
+        padding-top: 48px;
+        margin-left: 90px;
+    }
+    
+    .accordion {
+        margin-left: 6px;
+        list-style: none;
+    }
+    
+    .team-content__text {
+        color: $yellow;
+        font: 700 72px Gagalin;
+        padding-bottom: 64px;
+    }
+    
+    .accordion__list {
+        padding-bottom: 30px;
+    }
+    
+    .accordion__item {
+        cursor: pointer;
+    }
+    
+    .accordion__title {
+        color: $white;
+        font: 700 14px Gagalin;
+        cursor: pointer;
+        margin-left: -9px;
+        &:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            border: 6px solid transparent;
+            border-top-color: $yellow;
+            border-bottom: none;
+            margin-right: 6px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+    
+    .accordion__crew {
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .accordion__img {
+        width: 100px;
+        height: 100px;
+        background: url(../../img/content/team/aphex.png) -12px -1px no-repeat;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .accordion__description {
+        display: inline-block;
+        color: white;
+        max-width: 233px;
+        vertical-align: top;
+        margin: -2px 0 0 17px;
+    }
+    
+    .accordion__job {
+        font: 700 14px Ubuntu;
+        padding-bottom: 16px;
+    }
+    
+    .accordion__text {
+        font: 300 14px Ubuntu;
+        line-height: 23px;
+    }
+    
+    .accordion__list {
+        margin-bottom: 5px;
+        &.active {
+            .accordion__crew {
+                display: block;
+            }
+            .accordion__title {
+                color: $yellow;
+                &:before {
+                    transform: rotate(180deg);
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
