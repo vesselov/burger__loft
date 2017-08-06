@@ -1,0 +1,55 @@
+.menu {
+    background: url(../img/content/menu/Rectangle4.jpg)center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.menu__text {
+    color: $white;
+    font: 700 rem(72px) Gagalin;
+    padding-bottom: rem(64px);
+    display: inline-block;
+    padding: 6rem 0 0 6rem;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.menu-list__item {
+    cursor: pointer;
+}
+
+.menu-list__title {
+    display: flex;
+    justify-content: center;
+    width: rem(80px);
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu-list__text {
+    transform: rotate(270deg);
+    display: flex;
+    color: $white;
+    font: 700 rem(40px) Gagalin;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.menu-list__pic {
+    height: 100%;
+    background-position-x: 20rem;
+}
+
+
+

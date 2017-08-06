@@ -1,5 +1,5 @@
     .team {
-        background: url(../../img/content/team/team.jpg) center center no-repeat;
+        background: url(../img/content/team/team.jpg) center center no-repeat;
         background-size: 100% 100%;
         position: relative;
     }
@@ -15,23 +15,23 @@
     }
     
     .team-content {
-        padding-top: 48px;
-        margin-left: 90px;
+        padding-top: 13%;
+        margin-left: rem(90px);
     }
     
     .accordion {
-        margin-left: 6px;
+        margin-left: -2%;
         list-style: none;
     }
     
     .team-content__text {
         color: $yellow;
-        font: 700 72px Gagalin;
-        padding-bottom: 64px;
+        font: 700 rem(72px) Gagalin;
+        padding-bottom: 14%;
     }
     
     .accordion__list {
-        padding-bottom: 30px;
+        padding-bottom: rem(30px);
     }
     
     .accordion__item {
@@ -40,56 +40,56 @@
     
     .accordion__title {
         color: $white;
-        font: 700 14px Gagalin;
+        font: 700 rem(14px) Gagalin;
         cursor: pointer;
-        margin-left: -9px;
+        margin-left: rem(9px);
         &:before {
             content: "";
-            width: 0px;
-            height: 0px;
-            border: 6px solid transparent;
+            width: rem(0px);
+            height: rem(0px);
+            border: rem(6px) solid transparent;
             border-top-color: $yellow;
             border-bottom: none;
-            margin-right: 6px;
+            margin-right: rem(6px);
             vertical-align: middle;
             display: inline-block;
         }
     }
     
     .accordion__crew {
-        margin-top: 10px;
+        margin-top: rem(10px);
         display: none;
     }
     
     .accordion__img {
-        width: 100px;
-        height: 100px;
-        background: url(../../img/content/team/aphex.png) -12px -1px no-repeat;
+        width: rem(100px);
+        height: rem(100px);
+        background: url(../img/content/team/aphex.png) -12px -1px no-repeat;
         border-radius: 50%;
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 1.625rem;
     }
     
     .accordion__description {
         display: inline-block;
         color: white;
-        max-width: 233px;
+        max-width: rem(233px);
         vertical-align: top;
-        margin: -2px 0 0 17px;
+        margin: rem(-2px) 0 0 rem(17px);
     }
     
     .accordion__job {
-        font: 700 14px Ubuntu;
-        padding-bottom: 16px;
+        font: 700 rem(14px) Ubuntu;
+        padding-bottom: rem(16px);
     }
     
     .accordion__text {
-        font: 300 14px Ubuntu;
-        line-height: 23px;
+        font: 300 rem(14px) Ubuntu;
+        line-height: rem(23px);
     }
     
     .accordion__list {
-        margin-bottom: 5px;
+        margin-bottom: rem(5px);
         &.active {
             .accordion__crew {
                 display: block;
@@ -98,7 +98,7 @@
                 color: $yellow;
                 &:before {
                     transform: rotate(180deg);
-                    margin-top: -5px;
+                    margin-top: rem(-5px);
                 }
             }
         }

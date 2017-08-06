@@ -7,7 +7,7 @@
 }
 
 .header__menu {
-    margin-top: -10px;
+    margin-top: rem(-10px);
 }
 
 .header {
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4px;
+    padding-top: rem(4px);
 }
 
 .header__logo {
@@ -23,7 +23,7 @@
 }
 
 .nav {
-    margin-right: 16px;
+    margin-right: rem(16px);
 }
 
 .nav__list {
@@ -39,9 +39,9 @@
         display: inline-block;
         vertical-align: middle;
         content: ' ';
-        @include circle(5px,
+        @include circle(rem(5px),
         #fff);
-        margin: 0 12px;
+        margin: 0 rem(12px);
     }
     &:last-child:after {
         display: none;
@@ -50,7 +50,7 @@
 
 .nav__link {
     color: #ffffff;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
     text-transform: uppercase;
@@ -72,13 +72,14 @@
 }
 
 .hero__pic {
-    margin: -87px 0 0 15px;
+    margin: rem(-87px) 0 0 rem(15px);
 }
 
 .next-page {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 10%;
 }
 
 .hero__content {
@@ -90,8 +91,8 @@
 }
 
 .logo__img {
-    margin-top: 6px;
-    margin-left: -6px;
+    margin-top: rem(6px);
+    margin-left: rem(-6px);
 }
 
 .hero__img,
@@ -107,10 +108,10 @@
 .hero__description {
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px;
-    padding-bottom: 18px;
-    width: 470px;
-    height: 429px;
+    padding-left: rem(10px);
+    padding-bottom: rem(18px);
+    width: rem(470px);
+    height: rem(429px);
 }
 
 .logo {
@@ -120,7 +121,7 @@
 .section__title {
     color: #f9b43b;
     font-family: 'Gagalin';
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 400;
     line-height: 1.42;
     margin: 0;
@@ -129,8 +130,8 @@
 .hero__description-text {
     color: #ffffff;
     font-family: 'Lifehack';
-    font-size: 65px;
+    font-size: rem(65px);
     font-weight: 500;
     line-height: 1;
-    letter-spacing: -1px;
+    letter-spacing: rem(-1px);
 }
