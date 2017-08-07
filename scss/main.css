@@ -715,7 +715,7 @@ ul {
   background-position-x: 20rem; }
 
 .menu-list__text {
-  font-family: 'Ubuntu-Light';
+  font-family: 'Ubuntu';
   font-size: 14px;
   color: #fff;
   padding: 60px 30px;
@@ -739,7 +739,8 @@ ul {
           align-items: flex-end; }
 
 .footer {
-  background: #0d0d0d;
+  background: url(../img/content/footer.jpg) center center no-repeat;
+  background-size: cover;
   height: 58px;
   width: 100%; }
 
@@ -753,6 +754,9 @@ ul {
 .left-block,
 .right-block {
   width: 50%; }
+
+.left-block {
+  padding-top: 6px; }
 
 .right-block {
   display: -webkit-box;
@@ -772,21 +776,81 @@ ul {
   .social__icon:hover {
     opacity: 1; }
 
+.svg-phone {
+  width: 12px;
+  height: 12px;
+  fill: #e45028;
+  display: inline-block;
+  vertical-align: middle; }
+
 .social {
-  list-style: none; }
+  list-style: none;
+  padding-top: 16px; }
 
 .social__item {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 13px; }
 
 .left-block__pic {
   display: inline-block;
   text-decoration: none;
   color: #e45028;
   font-weight: 700;
-  padding-left: 0.1875rem; }
+  padding-left: 0.1875rem;
+  letter-spacing: -1px; }
 
 .left-block__address {
   color: #ffffff;
   font-weight: 300;
-  padding-bottom: 0.0625rem; }
+  padding-bottom: 0.0625rem;
+  letter-spacing: -1px; }
+
+.fixed-menu {
+  position: fixed;
+  top: 90px;
+  right: 40px; }
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative; }
+
+.fixed-menu__link:after,
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%; }
+
+.fixed-menu__link:after {
+  width: 6px;
+  height: 6px;
+  background: #fff; }
+
+.fixed-menu__link:before {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s; }
+
+.fixed-menu__link:hover:before {
+  width: 14px;
+  height: 14px;
+  opacity: 1; }
+
+.fixed-menu__item.active .fixed-menu__link:before {
+  width: 14px;
+  height: 14px;
+  opacity: 1; }
+
+.fixed-menu__item {
+  margin-bottom: 5px; }
 /*# sourceMappingURL=main.css.map */

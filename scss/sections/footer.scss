@@ -1,5 +1,6 @@
 .footer {
-    background: #0d0d0d;
+    background: url(../img/content/footer.jpg) center center no-repeat;
+    background-size: cover;
     height: 58px;
     width: 100%;
 }
@@ -13,6 +14,10 @@
 .left-block,
 .right-block {
     width: 50%;
+}
+
+.left-block {
+    padding-top: 6px;
 }
 
 .right-block {
@@ -32,12 +37,22 @@
     }
 }
 
+.svg-phone {
+    width: 12px;
+    height: 12px;
+    fill: #e45028;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .social {
     list-style: none;
+    padding-top: 16px;
 }
 
 .social__item {
     display: inline-block;
+    margin-left: 13px;
 }
 
 .left-block__pic {
@@ -46,10 +61,12 @@
     color: #e45028;
     font-weight: 700;
     padding-left: 0.1875rem;
+    letter-spacing: -1px;
 }
 
 .left-block__address {
     color: #ffffff;
     font-weight: 300;
     padding-bottom: 0.0625rem;
+    letter-spacing: -1px;
 }
