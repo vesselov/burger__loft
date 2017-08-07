@@ -39,39 +39,39 @@
     transform: translate(-50%, -50%) scale(.7);
     opacity: 0;
     transition: .5s;
-    padding: 50px 30px 0px 20px;
+    padding: rem(50px) rem(30px) rem(0px) rem(20px);
     background-color: rgba(0, 1, 5, .7);
 }
 
 .review__title {
     font-family: 'Gagalin';
     font-size: rem(14px);
-    margin: -6px 0 20px 3px;
+    margin: rem(6px) 0 rem(20px) rem(3px);
     color: #fff;
 }
 
 .review__shorttext {
     color: #ffffff;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: rem(24px);
-    margin-bottom: 10px;
-    padding-left: 3px;
+    margin-bottom: rem(10px);
+    padding-left: rem(3px);
 }
 
 .review__button-wrap {
-    padding-left: 4px;
+    padding-left: rem(4px);
 }
 
 .review__view {
     display: inline-block;
-    width: 110px;
-    border-radius: 5px;
+    width: rem(110px);
+    border-radius: rem(5px);
     background-color: $dark;
-    padding: 10px 15px;
+    padding: rem(10px) rem(15px);
     color: #ffffff;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;

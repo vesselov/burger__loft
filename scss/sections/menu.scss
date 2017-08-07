@@ -1,0 +1,74 @@
+                    .menu {
+                        background: url(../img/content/menu/Rectangle4.jpg)center center no-repeat;
+                        background-size: cover;
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                    }
+                    
+                    .menu__text {
+                        color: $white;
+                        font: 700 rem(72px) Gagalin;
+                        padding-bottom: rem(64px);
+                        display: inline-block;
+                        padding: 6rem 0 0 6rem;
+                    }
+                    
+                    .menu-list {
+                        display: flex;
+                        justify-content: flex-end;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                    }
+                    
+                    .menu-list__item {
+                        cursor: pointer;
+                        &.active {
+                            .menu-list__hidden {
+                                display: block;
+                            }
+                        }
+                    }
+                    
+                    .menu-list__link {
+                        display: flex;
+                        justify-content: center;
+                        width: rem(80px);
+                        height: 100%;
+                        align-items: center;
+                        overflow: hidden;
+                        float: left;
+                    }
+                    
+                    .menu-list__title {
+                        transform: rotate(270deg);
+                        display: flex;
+                        color: $white;
+                        font: 700 rem(40px) Gagalin;
+                        white-space: nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                    }
+                    
+                    .menu-list__pic {
+                        height: 100%;
+                        background-position-x: 20rem;
+                    }
+                    
+                    .menu-list__text {
+                        font-family: 'Ubuntu-Light';
+                        font-size: 14px;
+                        color: #fff;
+                        padding: 60px 30px;
+                        width: 550px;
+                        line-height: 1.8;
+                    }
+                    
+                    .menu-list__hidden {
+                        display: none;
+                        height: 100%;
+                        background: rgba(47, 50, 52, 0.93);
+                        overflow: hidden;
+                    }
