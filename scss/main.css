@@ -643,6 +643,110 @@ ul {
 .order__Elevation {
   display: none; }
 
+.order__radio {
+  position: relative;
+  white-space: nowrap;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer; }
+
+.order__radio-elem {
+  position: absolute;
+  top: 0;
+  left: -9999px; }
+
+.order__radio-fake::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: #e35028;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: width .3s, height .3s;
+  transition: width .3s, height .3s; }
+
+.order__radio-fake {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+.order__radio-elem:checked + .order__radio-fake:after {
+  width: 8px;
+  height: 8px; }
+
+.order__radio_checkbox .order__radio-fake {
+  border-radius: 0px; }
+
+.order__radio {
+  position: relative;
+  white-space: nowrap;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer; }
+
+.order__radio-elem {
+  position: absolute;
+  top: 0;
+  left: -9999px; }
+
+.order__radio-fake {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+.order__radio-fake:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: #e35028;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: width .3s, height .3s;
+  transition: width .3s, height .3s; }
+
+.order__radio-elem:checked + .order__radio-fake:after {
+  width: 8px;
+  height: 8px; }
+
+.order__radio-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 10px; }
+
+.order__radio_checkbox .order__radio-fake {
+  border-radius: 0px; }
+
+.order__radio_checkbox .order__radio-elem + .order__radio-fake:after {
+  background: transparent; }
+
+.order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
+  background: url("../img/content/check.png") 50% no-repeat transparent;
+  background-size: contain;
+  width: 11px;
+  height: 9px; }
+
 .menu {
   background: url(../img/content/menu/Rectangle4.jpg) center center no-repeat;
   background-size: cover;
@@ -853,4 +957,5 @@ ul {
 
 .fixed-menu__item {
   margin-bottom: 5px; }
+
 /*# sourceMappingURL=main.css.map */
