@@ -9,8 +9,20 @@
         font-size: rem(72px);
         font-weight: 400;
         line-height: 1.42;
-        margin: 0 auto;
-        margin-top: rem(-115px);
+        margin-top: -100px;
+        padding-bottom: 42px;
+    }
+    
+    .order__btn {
+        margin-right: 14px;
+    }
+    
+    .form {
+        width: 100%;
+        display: flex;
+        font-family: Ubuntu;
+        font-weight: 300;
+        font-size: 14px;
     }
     
     .order__form {
@@ -18,7 +30,6 @@
         display: flex;
         justify-content: space-between;
         color: #fff;
-        margin-top: rem(34px);
     }
     
     .order__block {
@@ -42,6 +53,8 @@
     .order__desc {
         padding-bottom: rem(8px);
         display: inline-block;
+        font-family: Ubuntu;
+        font-weight: 300;
     }
     
     .order__street {
@@ -79,7 +92,7 @@
     }
     
     .order__offer {
-        padding-top: rem(10px);
+        margin-top: 24px;
     }
     
     .order__money {
@@ -121,15 +134,6 @@
         }
     }
     
-    .order__radio {
-        display: flex;
-        cursor: pointer;
-        margin-right: 1.3125rem;
-        color: #fff;
-        font-size: 0.875rem;
-        font-weight: 300;
-    }
-    
     .order__money {
         display: flex;
         flex-direction: row;
@@ -139,15 +143,6 @@
     
     .order__Elevation {
         display: none;
-    }
-    
-    .order__radio {
-        position: relative;
-        white-space: nowrap;
-        margin-right: 20px;
-        display: inline-block;
-        vertical-align: middle;
-        cursor: pointer;
     }
     
     .order__radio-elem {
@@ -242,7 +237,7 @@
         vertical-align: middle;
         font-size: 14px;
         color: #fff;
-        margin-left: 10px;
+        margin-left: 4px;
     }
     
     .order__radio_checkbox .order__radio-fake {

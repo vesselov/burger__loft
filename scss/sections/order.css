@@ -8,8 +8,20 @@
   font-size: rem(72px);
   font-weight: 400;
   line-height: 1.42;
-  margin: 0 auto;
-  margin-top: rem(-115px); }
+  margin-top: -100px;
+  padding-bottom: 42px; }
+
+.order__btn {
+  margin-right: 14px; }
+
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Ubuntu;
+  font-weight: 300;
+  font-size: 14px; }
 
 .order__form {
   width: 100%;
@@ -19,8 +31,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #fff;
-  margin-top: rem(34px); }
+  color: #fff; }
 
 .order__block {
   width: 49%; }
@@ -43,7 +54,9 @@
 
 .order__desc {
   padding-bottom: rem(8px);
-  display: inline-block; }
+  display: inline-block;
+  font-family: Ubuntu;
+  font-weight: 300; }
 
 .order__street {
   width: 100%; }
@@ -73,7 +86,7 @@
   padding-top: 13px; }
 
 .order__offer {
-  padding-top: rem(10px); }
+  margin-top: 24px; }
 
 .order__money {
   display: -webkit-box;
@@ -119,16 +132,6 @@
     -webkit-transition: .3s;
     transition: .3s; }
 
-.order__radio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  margin-right: 1.3125rem;
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 300; }
-
 .order__money {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,14 +145,6 @@
 
 .order__Elevation {
   display: none; }
-
-.order__radio {
-  position: relative;
-  white-space: nowrap;
-  margin-right: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer; }
 
 .order__radio-elem {
   position: absolute;
@@ -233,7 +228,7 @@
   vertical-align: middle;
   font-size: 14px;
   color: #fff;
-  margin-left: 10px; }
+  margin-left: 4px; }
 
 .order__radio_checkbox .order__radio-fake {
   border-radius: 0px; }
