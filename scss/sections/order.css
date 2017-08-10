@@ -1,245 +1,69 @@
-.order {
-  background: url(../img/content/order/Rectangle6.jpg) center center no-repeat;
-  background-size: cover; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 15 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss, in `tablets'
+        from line 15 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss
 
-.order__title {
-  color: #f9b43b;
-  font-family: 'Gagalin';
-  font-size: rem(72px);
-  font-weight: 400;
-  line-height: 1.42;
-  margin-top: -100px;
-  padding-bottom: 42px; }
+10:         font-weight: 400;
+11:         line-height: 1.42;
+12:         margin-top: -100px;
+13:         padding-bottom: 42px;
+14:         text-align: center;
+15:         @include tablets {
+16:             margin: 0;
+17:             padding: 0;
+18:         }
+19:     }
+20:     
 
-.order__btn {
-  margin-right: 14px; }
-
-.form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Ubuntu;
-  font-weight: 300;
-  font-size: 14px; }
-
-.order__form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #fff; }
-
-.order__block {
-  width: 49%; }
-
-.order__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: rem(13px); }
-
-.order__input {
-  border-radius: rem(5px);
-  display: block;
-  width: 100%;
-  height: rem(35px);
-  border: none; }
-
-.order__desc {
-  padding-bottom: rem(8px);
-  display: inline-block;
-  font-family: Ubuntu;
-  font-weight: 300; }
-
-.order__street {
-  width: 100%; }
-
-.order__location {
-  width: rem(100px); }
-
-.order__name {
-  width: 49%; }
-
-.order__street {
-  width: 100%; }
-
-.order__address {
-  width: rem(100px); }
-
-.order__comment {
-  padding: rem(10px) 0 0 rem(10px);
-  display: block;
-  width: 100%;
-  height: rem(110px);
-  resize: none;
-  border: none;
-  border-radius: rem(5px); }
-
-.order__block--padd {
-  padding-top: 13px; }
-
-.order__offer {
-  margin-top: 24px; }
-
-.order__money {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: rem(10px); }
-
-.order__reset {
-  background: transparent;
-  border: none;
-  color: #fff; }
-
-.order__offer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.input-form__radio-fake {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  border-radius: 50%;
-  background-color: #fff;
-  position: relative;
-  vertical-align: bottom;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 0.625rem; }
-  .input-form__radio-fake:after {
-    content: '';
-    width: 0.4375rem;
-    height: 0.4375rem;
-    background-color: #e35028;
-    border-radius: 50%;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: .3s;
-    transition: .3s; }
-
-.order__money {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  margin-bottom: 0.9375rem; }
-
-.order__Elevation {
-  display: none; }
-
-.order__radio-elem {
-  position: absolute;
-  top: 0;
-  left: -9999px; }
-
-.order__radio-fake::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  background: #e35028;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: width .3s, height .3s;
-  transition: width .3s, height .3s; }
-
-.order__radio-fake {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #fff;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative; }
-
-.order__radio-elem:checked + .order__radio-fake:after {
-  width: 8px;
-  height: 8px; }
-
-.order__radio_checkbox .order__radio-fake {
-  border-radius: 0px; }
-
-.order__radio {
-  position: relative;
-  white-space: nowrap;
-  margin-right: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer; }
-
-.order__radio-elem {
-  position: absolute;
-  top: 0;
-  left: -9999px; }
-
-.order__radio-fake {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #fff;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative; }
-
-.order__radio-fake:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  background: #e35028;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: width .3s, height .3s;
-  transition: width .3s, height .3s; }
-
-.order__radio-elem:checked + .order__radio-fake:after {
-  width: 8px;
-  height: 8px; }
-
-.order__radio-title {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 14px;
-  color: #fff;
-  margin-left: 4px; }
-
-.order__radio_checkbox .order__radio-fake {
-  border-radius: 0px; }
-
-.order__radio_checkbox .order__radio-elem + .order__radio-fake:after {
-  background: transparent; }
-
-.order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
-  background: url("../img/content/check.png") 50% no-repeat transparent;
-  background-size: contain;
-  width: 11px;
-  height: 9px; }
-
-/*# sourceMappingURL=order.css.map */
+Backtrace:
+C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss:15:in `tablets'
+C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss:15
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 15 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss, in `tablets'\A         from line 15 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss\A \A 10:         font-weight: 400;\A 11:         line-height: 1.42;\A 12:         margin-top: -100px;\A 13:         padding-bottom: 42px;\A 14:         text-align: center;\A 15:         @include tablets {\A 16:             margin: 0;\A 17:             padding: 0;\A 18:         }\A 19:     }\A 20:     "; }

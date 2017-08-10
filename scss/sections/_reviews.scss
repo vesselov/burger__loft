@@ -9,7 +9,12 @@
 }
 
 .reviews__item {
-    flex-basis: 25%;
+    width: 25%;
+    height: 50%;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 }
 
 .review {
@@ -41,6 +46,9 @@
     transition: .5s;
     padding: rem(50px) rem(30px) rem(0px) rem(20px);
     background-color: rgba(0, 1, 5, .7);
+    @include tablets {
+        padding: 0;
+    }
 }
 
 .review__title {
@@ -48,6 +56,9 @@
     font-size: rem(14px);
     margin: rem(6px) 0 rem(20px) rem(3px);
     color: #fff;
+    @include tablets {
+        margin: 0;
+    }
 }
 
 .review__shorttext {

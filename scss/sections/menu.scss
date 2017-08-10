@@ -62,8 +62,11 @@
                         font-size: 14px;
                         color: #fff;
                         padding: 60px 30px;
-                        width: 550px;
+                        width: 33.75rem;
                         line-height: 1.8;
+                        @include tablets {
+                            width: 100%;
+                        }
                     }
                     
                     .menu-list__hidden {

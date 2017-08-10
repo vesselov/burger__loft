@@ -12,11 +12,22 @@
         width: 50%;
         height: 100%;
         opacity: .9;
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            width: 100%;
+            text-align: center;
+        }
     }
     
     .team-content {
         padding-top: 13%;
         margin-left: rem(90px);
+        @include tablets {
+            margin: 0;
+        }
     }
     
     .accordion {
@@ -93,6 +104,12 @@
         &.active {
             .accordion__crew {
                 display: block;
+                @include tablets {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
             }
             .accordion__title {
                 color: $yellow;

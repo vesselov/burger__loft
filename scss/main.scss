@@ -1,7 +1,11 @@
 // Config
-@import "config/_variables";
-@import "config/_mixins";
+@import "config/_variables.scss";
+@import "config/_mixins.scss";
 // Base
+$descktop:1200px;
+$laptop:992px;
+$tablets:768px;
+$phones:480px;
 @import "layout/media.scss";
 @import "layout/_fonts.scss";
 @import "layout/_base.scss";
