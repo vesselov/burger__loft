@@ -2,6 +2,9 @@
             position: fixed;
             top: 90px;
             right: 40px;
+            @include tablets {
+                display: none;
+            }
         }
         
         .fixed-menu__link {

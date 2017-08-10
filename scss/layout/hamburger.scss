@@ -1,0 +1,30 @@
+.hamburger-menu-link {
+    display: none;
+    width: 1.5rem;
+    height: 0.25rem;
+    background-color: #fff;
+    border-radius: 0.125rem;
+    position: relative;
+    margin: 1.5625rem 1.875rem;
+    &:before {
+        content: "";
+        width: 1.5rem;
+        height: 0.25rem;
+        background-color: #fff;
+        border-radius: 0.125rem;
+        position: absolute;
+        top: 0.625rem;
+    }
+    &:after {
+        content: "";
+        width: 1.5rem;
+        height: 0.25rem;
+        background-color: #fff;
+        border-radius: 0.125rem;
+        position: absolute;
+        top: -0.625rem;
+    }
+    @include tablets {
+        display: block;
+    }
+}
