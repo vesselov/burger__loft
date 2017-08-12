@@ -16,6 +16,9 @@
     line-height: rem(64px);
     margin-top: -10%;
     font-weight: 500;
+    @include phones {
+        font-size: 3.5rem;
+    }
 }
 
 .ingradients {
@@ -45,6 +48,11 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+    @include phones {
+        display: block;
+        width: 70px;
+        height: 80px;
+    }
 }
 
 .ingradients__item {
@@ -69,6 +77,9 @@
     font: 300 24px Lifehack;
     color: #2f3234;
     line-height: rem(28px);
+    @include phones {
+        font-size: 1.125rem;
+    }
 }
 
 .ingradients__description {
@@ -78,6 +89,9 @@
     line-height: rem(24px);
     opacity: .5;
     padding-left: rem(2px);
+    @include phones {
+        font-size: 0.6875rem;
+    }
 }
 
 .ingradients__logo {
