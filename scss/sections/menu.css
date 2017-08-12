@@ -12,7 +12,7 @@ Error: Undefined variable: "$white".
 12:                         padding-bottom: rem(64px);
 13:                         display: inline-block;
 14:                         padding: 6rem 0 0 6rem;
-15:                     }
+15:                         font-weight: 500;
 
 Backtrace:
 C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\menu.scss:10
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 10 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\menu.scss\A \A 5:                         flex-direction: row;\A 6:                         position: relative;\A 7:                     }\A 8:                     \A 9:                     .menu__text {\A 10:                         color: $white;\A 11:                         font: 700 rem(72px) Gagalin;\A 12:                         padding-bottom: rem(64px);\A 13:                         display: inline-block;\A 14:                         padding: 6rem 0 0 6rem;\A 15:                     }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 10 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\menu.scss\A \A 5:                         flex-direction: row;\A 6:                         position: relative;\A 7:                     }\A 8:                     \A 9:                     .menu__text {\A 10:                         color: $white;\A 11:                         font: 700 rem(72px) Gagalin;\A 12:                         padding-bottom: rem(64px);\A 13:                         display: inline-block;\A 14:                         padding: 6rem 0 0 6rem;\A 15:                         font-weight: 500;"; }

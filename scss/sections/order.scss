@@ -12,6 +12,7 @@
         margin-top: -100px;
         padding-bottom: 42px;
         text-align: center;
+        font-weight: 500;
         @include tablets {
             margin: 0;
             padding: 0;
@@ -44,6 +45,9 @@
     .order__block {
         flex: 1;
         margin-right: 1.25rem;
+        @include tablets {
+            margin: 0;
+        }
     }
     
     .order__label {
@@ -58,7 +62,8 @@
         width: 100%;
         height: rem(35px);
         border: none;
-        @include tablets {}
+        padding: 5px;
+        outline: none;
     }
     
     .order__desc {
@@ -112,6 +117,7 @@
         resize: none;
         border: none;
         border-radius: rem(5px);
+        outline: none;
     }
     
     .order__block--padd {
@@ -131,6 +137,7 @@
         background: transparent;
         border: none;
         color: #fff;
+        cursor: pointer;
     }
     
     .input-form__radio-fake {

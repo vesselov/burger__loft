@@ -48,6 +48,7 @@
     background-color: rgba(0, 1, 5, .7);
     @include tablets {
         padding: 0;
+        text-align: center;
     }
 }
 
@@ -58,6 +59,8 @@
     color: #fff;
     @include tablets {
         margin: 0;
+        font-size: rem(19px);
+        padding-bottom: 10px;
     }
 }
 
@@ -69,6 +72,10 @@
     line-height: rem(24px);
     margin-bottom: rem(10px);
     padding-left: rem(3px);
+    @include phones {
+        display: none;
+        padding-top: 20px;
+    }
 }
 
 .review__button-wrap {

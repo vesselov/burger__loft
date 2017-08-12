@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 15 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss, in `tablets'
-        from line 15 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss
+        on line 16 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss, in `tablets'
+        from line 16 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss
 
-10:         font-weight: 400;
 11:         line-height: 1.42;
 12:         margin-top: -100px;
 13:         padding-bottom: 42px;
 14:         text-align: center;
-15:         @include tablets {
-16:             margin: 0;
-17:             padding: 0;
-18:         }
-19:     }
-20:     
+15:         font-weight: 500;
+16:         @include tablets {
+17:             margin: 0;
+18:             padding: 0;
+19:         }
+20:     }
+21:     
 
 Backtrace:
-C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss:15:in `tablets'
-C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss:15
+C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss:16:in `tablets'
+C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss:16
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 15 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss, in `tablets'\A         from line 15 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss\A \A 10:         font-weight: 400;\A 11:         line-height: 1.42;\A 12:         margin-top: -100px;\A 13:         padding-bottom: 42px;\A 14:         text-align: center;\A 15:         @include tablets {\A 16:             margin: 0;\A 17:             padding: 0;\A 18:         }\A 19:     }\A 20:     "; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 16 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss, in `tablets'\A         from line 16 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss\A \A 11:         line-height: 1.42;\A 12:         margin-top: -100px;\A 13:         padding-bottom: 42px;\A 14:         text-align: center;\A 15:         font-weight: 500;\A 16:         @include tablets {\A 17:             margin: 0;\A 18:             padding: 0;\A 19:         }\A 20:     }\A 21:     "; }

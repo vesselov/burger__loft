@@ -15,6 +15,7 @@
     color: #2f3234;
     line-height: rem(64px);
     margin-top: -10%;
+    font-weight: 500;
 }
 
 .ingradients {
@@ -81,4 +82,10 @@
 
 .ingradients__logo {
     margin-bottom: rem(28px);
+}
+
+.ingradients__text {
+    @include phones {
+        padding: 0 0 22px 19px;
+    }
 }
