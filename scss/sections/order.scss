@@ -17,6 +17,9 @@
             margin: 0;
             padding: 0;
         }
+        @include phones {
+            font-size: 3.5rem;
+        }
     }
     
     .order__btn {

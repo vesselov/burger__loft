@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 16 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss, in `tablets'
-        from line 16 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss
+Error: Undefined mixin 'phones'.
+        on line 6 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss, in `phones'
+        from line 6 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss
 
-11:         line-height: 1.42;
-12:         margin-top: -100px;
-13:         padding-bottom: 42px;
-14:         text-align: center;
-15:         font-weight: 500;
-16:         @include tablets {
-17:             margin: 0;
-18:             padding: 0;
-19:         }
-20:         @include phones {
-21:             font-size: 3.5rem;
+1: .footer {
+2:     background: url(../img/content/footer.jpg) center center no-repeat;
+3:     background-size: cover;
+4:     height: 58px;
+5:     width: 100%;
+6:     @include phones {
+7:         height: 88px;
+8:     }
+9: }
+10: 
+11: .footer-content {
 
 Backtrace:
-C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss:16:in `tablets'
-C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss:16
+C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss:6:in `phones'
+C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss:6
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 16 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss, in `tablets'\A         from line 16 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\order.scss\A \A 11:         line-height: 1.42;\A 12:         margin-top: -100px;\A 13:         padding-bottom: 42px;\A 14:         text-align: center;\A 15:         font-weight: 500;\A 16:         @include tablets {\A 17:             margin: 0;\A 18:             padding: 0;\A 19:         }\A 20:         @include phones {\A 21:             font-size: 3.5rem;"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 6 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss, in `phones'\A         from line 6 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss\A \A 1: .footer {\A 2:     background: url(../img/content/footer.jpg) center center no-repeat;\A 3:     background-size: cover;\A 4:     height: 58px;\A 5:     width: 100%;\A 6:     @include phones {\A 7:         height: 88px;\A 8:     }\A 9: }\A 10: \A 11: .footer-content {"; }

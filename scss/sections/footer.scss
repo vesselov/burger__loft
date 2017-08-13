@@ -3,17 +3,26 @@
     background-size: cover;
     height: 58px;
     width: 100%;
+    @include phones {
+        height: 88px;
+    }
 }
 
 .footer-content {
     max-width: 940px;
     margin: 0 auto;
     display: flex;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .left-block,
 .right-block {
     width: 50%;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .left-block {
@@ -23,6 +32,9 @@
 .right-block {
     display: flex;
     justify-content: flex-end;
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .social__icon {
@@ -48,6 +60,9 @@
 .social {
     list-style: none;
     padding-top: 16px;
+    @include phones {
+        padding-top: 8px;
+    }
 }
 
 .social__item {
@@ -69,4 +84,16 @@
     font-weight: 300;
     padding-bottom: 0.0625rem;
     letter-spacing: -1px;
+    @include phones {
+        text-align: center;
+    }
+    @include phones {
+        padding-bottom: 5px;
+    }
+}
+
+.left-block__phone {
+    @include phones {
+        text-align: center;
+    }
 }

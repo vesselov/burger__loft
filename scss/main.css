@@ -249,7 +249,7 @@ ul {
   height: 10%; }
   @media screen and (max-width: 480px) {
     .next-page {
-      height: 25%; } }
+      height: 10%; } }
 
 .hero__content {
   width: 100%;
@@ -513,6 +513,18 @@ ul {
     .review__hover {
       padding: 0;
       text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .review__hover {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .review__title {
   font-family: 'Gagalin';
@@ -705,6 +717,9 @@ ul {
     .order__title {
       margin: 0;
       padding: 0; } }
+  @media screen and (max-width: 480px) {
+    .order__title {
+      font-size: 3.5rem; } }
 
 .order__btn {
   margin-right: 14px; }
@@ -1122,17 +1137,32 @@ ul {
   background-size: cover;
   height: 58px;
   width: 100%; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      height: 88px; } }
 
 .footer-content {
   max-width: 940px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 95%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .left-block,
 .right-block {
   width: 50%; }
+  @media screen and (max-width: 480px) {
+    .left-block,
+    .right-block {
+      width: 100%; } }
 
 .left-block {
   padding-top: 6px; }
@@ -1144,6 +1174,11 @@ ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+  @media screen and (max-width: 480px) {
+    .right-block {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .social__icon {
   display: inline-block;
@@ -1165,6 +1200,9 @@ ul {
 .social {
   list-style: none;
   padding-top: 16px; }
+  @media screen and (max-width: 480px) {
+    .social {
+      padding-top: 8px; } }
 
 .social__item {
   display: inline-block;
@@ -1183,6 +1221,16 @@ ul {
   font-weight: 300;
   padding-bottom: 0.0625rem;
   letter-spacing: -1px; }
+  @media screen and (max-width: 480px) {
+    .left-block__address {
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .left-block__address {
+      padding-bottom: 5px; } }
+
+@media screen and (max-width: 480px) {
+  .left-block__phone {
+    text-align: center; } }
 
 .fixed-menu {
   position: fixed;
