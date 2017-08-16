@@ -49,6 +49,10 @@
     @include tablets {
         padding: 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     @include phones {
         display: flex;
@@ -64,7 +68,7 @@
     color: #fff;
     @include tablets {
         margin: 0;
-        font-size: rem(19px);
+        font-size: rem(14px);
         padding-bottom: 10px;
     }
 }
@@ -77,6 +81,9 @@
     line-height: rem(24px);
     margin-bottom: rem(10px);
     padding-left: rem(3px);
+    @include tablets {
+        font-size: rem(12px);
+    }
     @include phones {
         display: none;
         padding-top: 20px;

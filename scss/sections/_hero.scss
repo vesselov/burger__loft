@@ -86,11 +86,9 @@
 .next-page {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 10%;
-    @include phones {
-        height: 10%;
-    }
+    position: absolute;
+    bottom: rem(33px);
+    @include phones {}
 }
 
 .hero__content {
@@ -100,6 +98,7 @@
     flex-grow: 1;
     align-items: center;
     justify-content: center;
+    margin-top: rem(-83px);
     @include tablets {
         flex-direction: column;
         flex-wrap: nowrap;

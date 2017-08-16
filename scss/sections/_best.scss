@@ -17,7 +17,7 @@
     margin-top: -10%;
     font-weight: 500;
     @include phones {
-        font-size: 3.5rem;
+        font-size: rem(50px);
     }
 }
 
@@ -78,7 +78,7 @@
     color: #2f3234;
     line-height: rem(28px);
     @include phones {
-        font-size: 1.125rem;
+        font-size: rem(24.4px);
     }
 }
 
@@ -90,7 +90,7 @@
     opacity: .5;
     padding-left: rem(2px);
     @include phones {
-        font-size: 0.6875rem;
+        font-size: rem(14px);
     }
 }
 

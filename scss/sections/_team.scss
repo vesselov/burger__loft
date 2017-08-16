@@ -1,6 +1,6 @@
     .team {
         background: url(../img/content/team/team.jpg) center center no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         position: relative;
     }
     
@@ -55,7 +55,7 @@
     
     .accordion__title {
         color: $white;
-        font: 700 rem(14px) Gagalin;
+        font: 500 rem(14px) Gagalin;
         cursor: pointer;
         margin-left: rem(9px);
         text-decoration: none;

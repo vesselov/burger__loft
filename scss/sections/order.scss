@@ -32,6 +32,9 @@
         font-family: Ubuntu;
         font-weight: 300;
         font-size: 14px;
+        @include tablets {
+            max-width: 30rem;
+        }
     }
     
     .order__form {
@@ -125,7 +128,7 @@
     
     .order__block--padd {
         padding-top: 13px;
-        width: 97%;
+        width: 100%;
     }
     
     .order__offer {
