@@ -83,6 +83,7 @@
     padding-left: rem(3px);
     @include tablets {
         font-size: rem(12px);
+        line-height: initial;
     }
     @include phones {
         display: none;

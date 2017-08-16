@@ -60,6 +60,21 @@
                         }
                     }
                     
+                    .menu-list__link--meat {
+                        background: url(../img/content/menu/1.jpg)56% 0% no-repeat;
+                        background-size: cover;
+                    }
+                    
+                    .menu-list__link--vegan {
+                        background: url(../img/content/menu/2.jpg)99% 0% no-repeat;
+                        background-size: cover;
+                    }
+                    
+                    .menu-list__link--balans {
+                        background: url(../img/content/menu/3.jpg)10% 0% no-repeat;
+                        background-size: cover;
+                    }
+                    
                     .menu-list__title {
                         transform: rotate(270deg);
                         display: flex;
