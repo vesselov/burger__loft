@@ -31,6 +31,9 @@
     @include tablets {
         flex-direction: column;
     }
+    @include phones {
+        margin-top: 40px;
+    }
 }
 
 .box-right {
@@ -42,6 +45,14 @@
     }
 }
 
+.box-left__img {
+    @include tablets {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
 .box-right__title {
     display: inline-block;
     padding-bottom: 41px;
@@ -50,11 +61,19 @@
     line-height: 3.75rem;
     vertical-align: top;
     color: white;
+    @include tablets {
+        padding-bottom: 19px;
+        width: 78%
+    }
+    @include phones {
+        font-size: rem(50px);
+        width: 70%;
+    }
 }
 
 .box-right__desc {
     padding-bottom: 8px;
-    font-family: "Ubuntu-Light", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: white;
@@ -65,6 +84,9 @@
     font-family: "Gagalin", sans-serif;
     font-size: 1.875rem;
     color: #e35028;
+    @include phones {
+        font-size: rem(50px);
+    }
 }
 
 .box-left__made {
@@ -95,6 +117,9 @@
     @include tablets {
         top: 36px;
     }
+    @include phones {
+        top: -91px;
+    }
 }
 
 .svg-burger {
@@ -122,6 +147,9 @@
         top: 38px;
         right: 10px;
         left: initial;
+    }
+    @include phones {
+        top: -91px;
     }
 }
 
@@ -174,8 +202,12 @@
 .box-left__pic {
     margin: 68px 0 0 -34px;
     max-width: 120%;
+    @include tablets {
+        margin: 68px 0 0 0;
+    }
     @include phones {
-        max-width: 100%;
+        max-width: 80%;
+        margin: 0;
     }
 }
 
@@ -191,6 +223,9 @@
     align-items: center;
     position: absolute;
     bottom: 47%;
+    @include phones {
+        bottom: 60%;
+    }
 }
 
 .box-list {

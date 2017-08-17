@@ -1366,6 +1366,9 @@ ul {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+  @media screen and (max-width: 480px) {
+    .box-list__item {
+      margin-top: 40px; } }
 
 .box-right {
   margin-left: 21px;
@@ -1375,6 +1378,18 @@ ul {
       margin: 0;
       text-align: center; } }
 
+@media screen and (max-width: 768px) {
+  .box-left__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
 .box-right__title {
   display: inline-block;
   padding-bottom: 41px;
@@ -1383,10 +1398,18 @@ ul {
   line-height: 3.75rem;
   vertical-align: top;
   color: white; }
+  @media screen and (max-width: 768px) {
+    .box-right__title {
+      padding-bottom: 19px;
+      width: 78%; } }
+  @media screen and (max-width: 480px) {
+    .box-right__title {
+      font-size: 3.125rem;
+      width: 70%; } }
 
 .box-right__desc {
   padding-bottom: 8px;
-  font-family: "Ubuntu-Light", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 0.875rem;
   line-height: 1.5rem;
   color: white; }
@@ -1396,6 +1419,9 @@ ul {
   font-family: "Gagalin", sans-serif;
   font-size: 1.875rem;
   color: #e35028; }
+  @media screen and (max-width: 480px) {
+    .box-right__price {
+      font-size: 3.125rem; } }
 
 .box-left__made {
   position: relative;
@@ -1435,6 +1461,9 @@ ul {
   @media screen and (max-width: 768px) {
     .box-left__ingragients {
       top: 36px; } }
+  @media screen and (max-width: 480px) {
+    .box-left__ingragients {
+      top: -91px; } }
 
 .svg-burger {
   width: 46px;
@@ -1460,6 +1489,9 @@ ul {
       top: 38px;
       right: 10px;
       left: initial; } }
+  @media screen and (max-width: 480px) {
+    .burger-weight {
+      top: -91px; } }
 
 .burger-weight__amount {
   position: absolute;
@@ -1506,9 +1538,13 @@ ul {
 .box-left__pic {
   margin: 68px 0 0 -34px;
   max-width: 120%; }
+  @media screen and (max-width: 768px) {
+    .box-left__pic {
+      margin: 68px 0 0 0; } }
   @media screen and (max-width: 480px) {
     .box-left__pic {
-      max-width: 100%; } }
+      max-width: 80%;
+      margin: 0; } }
 
 .box-right__btn {
   margin-left: 28px; }
@@ -1525,6 +1561,9 @@ ul {
           align-items: center;
   position: absolute;
   bottom: 47%; }
+  @media screen and (max-width: 480px) {
+    .box-scroll__img {
+      bottom: 60%; } }
 
 .box-list {
   height: 100%;
