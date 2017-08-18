@@ -111,3 +111,31 @@
         background-color: darken($dark, 5%);
     }
 }
+
+.fancy-box {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    z-index: 800;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translate(-50%, -50%);
+}
+
+.fancy-box__block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    max-width: 28.125rem;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: Ubuntu, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    transform: translate(-50%, -50%);
+    padding: 1.875rem 1.25rem;
+    border-radius: 0.4375rem;
+}

@@ -45,3 +45,21 @@ $(function() {
         }
     })
 });
+
+//////////----------///////////////binvar flag = true;
+
+
+
+/////$(function () {
+$('[data-fancybox]').fancybox({
+    afterShow: function() {
+        console.log('after show callback');
+    }
+});
+
+$('.close').on('click', function(e) {
+    e.preventDefault()
+
+    $.fancybox.close();
+
+});

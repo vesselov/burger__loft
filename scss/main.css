@@ -594,6 +594,34 @@ ul {
   .review__view:hover {
     background-color: #232527; }
 
+.fancy-box {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  z-index: 800;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.fancy-box__block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  max-width: 28.125rem;
+  width: 100%;
+  color: black;
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 1.875rem 1.25rem;
+  border-radius: 0.4375rem; }
+
 .team {
   background: url(../img/content/team/team.jpg) center center no-repeat;
   background-size: cover;
@@ -1078,6 +1106,8 @@ ul {
   cursor: pointer; }
   .menu-list__item.active .menu-list__hidden {
     display: block; }
+  .menu-list__item.active .menu-list__title {
+    color: #f9b43b; }
 
 .menu-list__link {
   display: -webkit-box;
