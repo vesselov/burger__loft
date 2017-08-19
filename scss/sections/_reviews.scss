@@ -117,7 +117,7 @@
     display: none;
     top: 50%;
     left: 50%;
-    z-index: 800;
+    z-index: 10;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
@@ -138,4 +138,32 @@
     transform: translate(-50%, -50%);
     padding: 1.875rem 1.25rem;
     border-radius: 0.4375rem;
+}
+
+.fancy-box__title {
+    font-family: Gagalin;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5625rem;
+}
+
+.fancy-box__description {
+    font-size: 0.875rem;
+    font-family: Ubuntu-Light;
+}
+
+.close {
+    position: absolute;
+    right: 0.9375rem;
+    top: 0.9375rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    box-sizing: content-box;
+    background: url(../img/close.png) no-repeat;
+    background-size: 100%;
+    outline: none;
+}
+
+.fancybox-close-small {
+    display: none;
 }

@@ -32,16 +32,29 @@
 .nav__list {
     margin: 0;
     padding: 0;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }
 
 .nav__item {
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
     &:after {
         display: inline-block;
         vertical-align: middle;
         content: ' ';
+        @include tablets {
+            margin: 0.625rem auto;
+        }
         @include circle(rem(5px),
         #fff);
         margin: 0 rem(12px);
@@ -88,6 +101,9 @@
     justify-content: center;
     position: absolute;
     bottom: rem(33px);
+    &:hover {
+        bottom: rem(27px);
+    }
     @include phones {}
 }
 

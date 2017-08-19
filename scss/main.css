@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu/ubuntu-b-webfont.woff2") format("woff2");
+  src: url("../fonts/Ubuntu/ubuntu-b-webfont.woff2") format("woff2");
   font-weight: 900;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu/ubuntu-light-webfont.woff2") format("woff2");
+  src: url("../fonts/Ubuntu/ubuntu-light-webfont.woff2") format("woff2");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu/ubuntu-medium-webfont.woff2") format("woff2");
+  src: url("../fonts/Ubuntu/ubuntu-medium-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu/ubuntu-regular-webfont.woff2") format("woff2");
+  src: url("../fonts/Ubuntu/ubuntu-regular-webfont.woff2") format("woff2");
   font-weight: 500;
   font-style: normal; }
 @font-face {
@@ -38,9 +38,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   line-height: 1.42;
-  color: #2f3234; }
+  color: #2f3234;
+  overflow: hidden; }
 
 *,
 *::before,
@@ -70,53 +71,109 @@ ul {
   padding: 0;
   list-style: none; }
 
-.hamburger-menu__item,
-.hamburger-menu__item:after,
-.hamburger-menu__item:before {
-  display: block;
-  width: 100%;
-  height: 0.25rem;
-  background-color: #fff;
+.hamburger-menu-link {
+  vertical-align: middle;
+  position: relative;
+  height: 1.375rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.875rem;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .hamburger-menu-link {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; } }
+
+.hamburger-menu-link__bars,
+.hamburger-menu-link__bars:before,
+.hamburger-menu-link__bars:after {
+  background: #fff;
+  width: 1.5rem;
+  height: 0.3125rem;
   border-radius: 0.1875rem; }
 
+.hamburger-menu-link__bars:before,
+.hamburger-menu-link__bars:after {
+  content: "";
+  display: block;
+  position: absolute; }
+
+.hamburger-menu-link__bars:before {
+  top: 0; }
+
+.hamburger-menu-link__bars:after {
+  bottom: 0; }
+
 .hamburger-menu {
-  position: relative;
-  margin: 1.5625rem 1.875rem;
-  cursor: pointer;
-  display: none;
-  height: 1.375rem;
-  width: 1.5rem; }
-  .hamburger-menu:before {
-    content: "";
-    position: absolute;
-    top: 1rem;
-    display: block;
-    width: 100%;
-    height: 0.25rem;
-    background-color: #fff;
-    border-radius: 0.1875rem; }
-  .hamburger-menu:after {
-    content: "";
-    position: absolute;
-    top: 0.5rem;
-    display: block;
-    width: 100%;
-    height: 0.25rem;
-    background-color: #fff;
-    border-radius: 0.1875rem; }
-  @media screen and (max-width: 768px) {
-    .hamburger-menu {
-      display: block; } }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 50, 52, 0.99);
+  margin: 0;
+  display: none; }
+
+.hamburger-active {
+  display: block; }
+
+.hamburger-menu__logo {
+  position: absolute;
+  top: 0.625rem;
+  left: 1.875rem; }
+
+.hamburger-menu__close {
+  position: absolute;
+  right: 0.9375rem;
+  top: 0.9375rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  padding: 0.9375rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background: url(../img/x.png) no-repeat; }
+
+.hamburger-menu__close:hover .hamburger-menu__close-icon use {
+  fill: #fff; }
+
+.hamburger-menu__close-icon {
+  width: 100%;
+  height: 100%; }
+
+.hamburger-menu__close-icon use {
+  fill: #c1c2c2;
+  -webkit-transition: fill .3s;
+  transition: fill .3s; }
+
+.hamburger-menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .wrapper {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden; }
 
 .maincontent {
   height: 100%;
-  min-height: 40.625rem; }
+  min-height: 40.625rem;
+  will-change: transform;
+  -webkit-transition: 1s;
+  transition: 1s; }
 
 .container {
   width: 95%;
@@ -193,11 +250,33 @@ ul {
 .nav__list {
   margin: 0;
   padding: 0; }
+  @media screen and (max-width: 768px) {
+    .nav__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .nav__item {
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap; }
+  @media screen and (max-width: 768px) {
+    .nav__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .nav__item:after {
     display: inline-block;
     vertical-align: middle;
@@ -207,6 +286,9 @@ ul {
     border-radius: 0.15625rem;
     background-color: #fff;
     margin: 0 0.75rem; }
+    @media screen and (max-width: 768px) {
+      .nav__item:after {
+        margin: 0.625rem auto; } }
   .nav__item:last-child:after {
     display: none; }
 
@@ -257,6 +339,8 @@ ul {
           justify-content: center;
   position: absolute;
   bottom: 2.0625rem; }
+  .next-page:hover {
+    bottom: 1.6875rem; }
 
 .hero__content {
   width: 100%;
@@ -599,7 +683,7 @@ ul {
   display: none;
   top: 50%;
   left: 50%;
-  z-index: 800;
+  z-index: 10;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
@@ -621,6 +705,31 @@ ul {
           transform: translate(-50%, -50%);
   padding: 1.875rem 1.25rem;
   border-radius: 0.4375rem; }
+
+.fancy-box__title {
+  font-family: Gagalin;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5625rem; }
+
+.fancy-box__description {
+  font-size: 0.875rem;
+  font-family: Ubuntu-Light; }
+
+.close {
+  position: absolute;
+  right: 0.9375rem;
+  top: 0.9375rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background: url(../img/close.png) no-repeat;
+  background-size: 100%;
+  outline: none; }
+
+.fancybox-close-small {
+  display: none; }
 
 .team {
   background: url(../img/content/team/team.jpg) center center no-repeat;
