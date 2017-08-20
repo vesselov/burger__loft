@@ -76,6 +76,7 @@
     transition: .5s;
     &:hover {
         text-decoration: underline;
+        transition: .4s;
     }
 }
 
@@ -118,7 +119,6 @@
     @include tablets {
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: flex-start;
     }
 }
 

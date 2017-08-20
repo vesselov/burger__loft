@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 6 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss, in `phones'
-        from line 6 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss
+        on line 6 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\footer.scss, in `phones'
+        from line 6 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\footer.scss
 
 1: .footer {
 2:     background: url(../img/content/footer.jpg) center center no-repeat;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'phones'.
 11: .footer-content {
 
 Backtrace:
-C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss:6:in `phones'
-C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss:6
+C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\footer.scss:6:in `phones'
+C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\footer.scss:6
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 6 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss, in `phones'\A         from line 6 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\footer.scss\A \A 1: .footer {\A 2:     background: url(../img/content/footer.jpg) center center no-repeat;\A 3:     background-size: cover;\A 4:     height: 58px;\A 5:     width: 100%;\A 6:     @include phones {\A 7:         height: 88px;\A 8:     }\A 9: }\A 10: \A 11: .footer-content {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 6 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\footer.scss, in `phones'\A         from line 6 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\footer.scss\A \A 1: .footer {\A 2:     background: url(../img/content/footer.jpg) center center no-repeat;\A 3:     background-size: cover;\A 4:     height: 58px;\A 5:     width: 100%;\A 6:     @include phones {\A 7:         height: 88px;\A 8:     }\A 9: }\A 10: \A 11: .footer-content {"; }

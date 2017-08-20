@@ -22,8 +22,23 @@ $(function() {
     })
 });
 
+$(function() {
+    $('.hamburger-menu-link').on('click', function(e) {
+        e.preventDefault()
+        var elem = $(e.target);
+        var display = $('.hamburger-menu');
+        display.addClass('active-hamberger');
+    });
+});
 
+$(function() {
+    $('.hamburger-menu__close').on('click', function(e) {
+        e.preventDefault()
+        var close = $('.hamburger-menu')
+        close.removeClass('active-hamberger')
 
+    })
+});
 
 $(function() {
     $('.accordion__title').on('click', function(e) {
@@ -56,7 +71,7 @@ $(function() {
 /////$(function () {
 $('[data-fancybox]').fancybox({
     afterShow: function() {
-        console.log('after show callback');
+
     }
 });
 

@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 5 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\fixed.scss, in `tablets'
-        from line 5 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\fixed.scss
+        on line 5 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\fixed.scss, in `tablets'
+        from line 5 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\fixed.scss
 
 1:         .fixed-menu {
 2:             position: fixed;
@@ -15,8 +15,8 @@ Error: Undefined mixin 'tablets'.
 10:         .fixed-menu__link {
 
 Backtrace:
-C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\fixed.scss:5:in `tablets'
-C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\fixed.scss:5
+C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\fixed.scss:5:in `tablets'
+C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\fixed.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\fixed.scss, in `tablets'\A         from line 5 of C:\Users\Bonnita\Desktop\projekt\loft_school__second\scss\sections\fixed.scss\A \A 1:         .fixed-menu {\A 2:             position: fixed;\A 3:             top: 90px;\A 4:             right: 40px;\A 5:             @include tablets {\A 6:                 display: none;\A 7:             }\A 8:         }\A 9:         \A 10:         .fixed-menu__link {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\fixed.scss, in `tablets'\A         from line 5 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\fixed.scss\A \A 1:         .fixed-menu {\A 2:             position: fixed;\A 3:             top: 90px;\A 4:             right: 40px;\A 5:             @include tablets {\A 6:                 display: none;\A 7:             }\A 8:         }\A 9:         \A 10:         .fixed-menu__link {"; }
