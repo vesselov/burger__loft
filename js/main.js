@@ -248,31 +248,31 @@ function init() {
 
 }
 
-//////-----slider-------------///////////////////
+//////-----slider-------------////////////////////
 function slide(move) {
 
-    var Wrapper = $('.box-wrapp'),
-        sliderList = Wrapper.find('.box__list'),
-        sliderItem = Wrapper.find('.box-list__item'),
-        Active = sliderItem.filter('.active'),
-        nextItem = Active.next(),
+    var wrapper = $('.box-wrapp'),
+        list = wrapper.find('.box-list'),
+        item = wrapper.find('.box-list__item'),
+        active = item.filter('.active'),
+        nextItem = active.next(),
         nextNumberItem = nextItem.index(),
-        backItem = Active.prev(),
+        backItem = active.prev(),
         backNumberItem = backItem.index(),
         slideTime = 700;
 
-    console.log(slide)
+
     if (move == 'next') {
 
         if (!nextItem.length) {
-            nextItem = sliderItem.first();
+            nextItem = item.first();
             nextNumberItem = nextItem.index();
         }
         var next = -nextNumberItem * 100 + '%';
-        sliderList.stop(true).animate({
+        list.stop(true).animate({
             'left': next
         }, slideTime, function() {
-            Active.removeClass('active');
+            active.removeClass('active');
             nextItem.addClass('active');
         });
     }
@@ -280,31 +280,25 @@ function slide(move) {
     if (move == 'back') {
 
         if (!backItem.length) {
-            backItem = sliderItem.last();
+            backItem = item.last();
             backNumberItem = backItem.index();
         }
         var back = -backNumberItem * 100 + '%';
 
-        sliderList.stop(true).animate({
+        list.stop(true).animate({
             'left': back
         }, slideTime, function() {
-            sliderActive.removeClass('active');
+            active.removeClass('active');
             backItem.addClass('active');
         });
     }
-    console.log(next);
 }
 
 
 $('.box-scroll__img--first').on('click', function() {
-
     slide('next');
-
-
 });
 
 $('.box-scroll__img--second').on('click', function() {
-
     slide('back');
-
 });

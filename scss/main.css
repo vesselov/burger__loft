@@ -1565,6 +1565,10 @@ ul {
   font-size: 0.875rem;
   line-height: 1.5rem;
   color: white; }
+  @media screen and (max-width: 768px) {
+    .box-right__desc {
+      width: 90%;
+      margin: auto; } }
 
 .box-right__price {
   display: inline-block;
@@ -1701,6 +1705,11 @@ ul {
 .box-right__btn {
   margin-left: 28px; }
 
+.box-wrapp {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
 .box-scroll__img {
   background: url(../img/content/arrow-scroll.png) no-repeat;
   width: 20px;
@@ -1715,6 +1724,7 @@ ul {
   bottom: 47%;
   -webkit-transition: .3s;
   transition: .3s;
+  z-index: 100;
   cursor: pointer; }
   @media screen and (max-width: 480px) {
     .box-scroll__img {
@@ -1723,17 +1733,12 @@ ul {
 
 .box-list {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 0; }
-
-.box-table {
-  position: absolute; }
+  top: 0;
+  width: 100%; }
 
 .box-table {
   position: absolute;
