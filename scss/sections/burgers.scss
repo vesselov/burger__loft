@@ -27,12 +27,15 @@
 }
 
 .box-list__item {
-    display: flex;
+    display: none;
     @include tablets {
         flex-direction: column;
     }
     @include phones {
         margin-top: 40px;
+    }
+    &.active {
+        display: flex;
     }
 }
 
@@ -223,8 +226,11 @@
     align-items: center;
     position: absolute;
     bottom: 47%;
+    transition: .3s;
+    cursor: pointer;
     @include phones {
         bottom: 60%;
+        cursor: pointer;
     }
 }
 

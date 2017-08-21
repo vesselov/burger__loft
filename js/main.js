@@ -89,9 +89,11 @@ $('.close').on('click', function(e) {
 });
 ////////////////////////////$Recycle.Bin
 
-
+$('#phone').mask('+7(999) 999-9999');
 //scroll
 $(function() {
+
+
     var sections = $('.section'),
         display = $('.maincontent'),
         inScroll = false;
@@ -188,7 +190,7 @@ $(function() {
             }
         });
     }
-    $('#phone').mask('+7(999) 999-9999');
+
 });
 ////////////////--------map--------------//////////////////
 
@@ -207,12 +209,11 @@ function init() {
         hintContent: 'привет',
         balloonContent: 'Бургеры тут'
     }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
+
         iconLayout: 'default#image',
-        // Своё изображение иконки метки.
+
         iconImageHref: '../img/content/map-marker.png',
-        // Размеры метки.
+
         iconImageSize: [46, 57],
         iconImageOffset: [-22, -57]
     });
@@ -220,12 +221,11 @@ function init() {
         hintContent: 'привет',
         balloonContent: 'бургеры тут'
     }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
+
         iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: '../img/content/map-marker.png',
-        // Размеры метки.
+
+        iconImageHref: './img/content/map-marker.png',
+
         iconImageSize: [46, 57],
         iconImageOffset: [-22, -57]
     });
@@ -233,12 +233,11 @@ function init() {
         hintContent: 'привет',
         balloonContent: 'бургеры тут'
     }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
+
         iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: '../img/content/map-marker.png',
-        // Размеры метки.
+
+        iconImageHref: './img/content/map-marker.png',
+
         iconImageSize: [46, 57],
         iconImageOffset: [-22, -57]
     });
@@ -248,3 +247,64 @@ function init() {
     myMap.geoObjects.add(myPlacemark).add(myPlacemark2).add(myPlacemark3);
 
 }
+
+//////-----slider
+function slide(move) {
+
+    var Wrapper = $('.box-wrapp'),
+        sliderList = Wrapper.find('.box__list'),
+        sliderItem = Wrapper.find('.box-list__item'),
+        Active = sliderItem.filter('.active'),
+        nextItem = Active.next(),
+        nextNumberItem = nextItem.index(),
+        backItem = sliderActive.prev(),
+        backNumberItem = backItem.index(),
+        slideTime = 700;
+
+
+    if (move == 'next') {
+
+        if (!nextItem.length) {
+            nextItem = sliderItem.first();
+            nextNumberItem = nextItem.index();
+        }
+        var next = -nextNumberItem * 100 + '%';
+        sliderList.stop(true).animate({
+            'left': next
+        }, slideTime, function() {
+            Active.removeClass('active');
+            nextItem.addClass('active');
+        });
+    }
+
+    if (move == 'back') {
+
+        if (!backItem.length) {
+            backItem = sliderItem.last();
+            backNumberItem = backItem.index();
+        }
+        var back = -backNumberItem * 100 + '%';
+
+        sliderList.stop(true).animate({
+            'left': back
+        }, slideTime, function() {
+            sliderActive.removeClass('active');
+            backItem.addClass('active');
+        });
+    }
+    console.log(next);
+}
+
+
+$('.box-scroll__img--first').on('click', function() {
+
+    slide('next');
+
+
+});
+
+$('.box-scroll__img--second').on('click', function() {
+
+    slide('back');
+
+});
