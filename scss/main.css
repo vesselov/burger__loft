@@ -193,12 +193,14 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh; }
+  height: 100%; }
 
 .section {
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.31);
-  min-height: 40.625rem; }
+  min-height: 40.625rem;
+  position: relative;
+  overflow: hidden; }
 
 .order-link {
   min-width: 6.125rem;
