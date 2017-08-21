@@ -257,7 +257,7 @@ function slide(move) {
         Active = sliderItem.filter('.active'),
         nextItem = Active.next(),
         nextNumberItem = nextItem.index(),
-        backItem = sliderActive.prev(),
+        backItem = Active.prev(),
         backNumberItem = backItem.index(),
         slideTime = 700;
 
