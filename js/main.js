@@ -90,7 +90,7 @@ $('.close').on('click', function(e) {
 ////////////////////////////$Recycle.Bin
 
 $('#phone').mask('+7(999) 999-9999');
-//scroll
+/scroll/ //////////////////////////////////////////
 $(function() {
 
 
@@ -212,7 +212,7 @@ function init() {
 
         iconLayout: 'default#image',
 
-        iconImageHref: '../img/content/map-marker.png',
+        iconImageHref: './img/content/map-marker.png',
 
         iconImageSize: [46, 57],
         iconImageOffset: [-22, -57]
@@ -248,7 +248,7 @@ function init() {
 
 }
 
-//////-----slider
+//////-----slider-------------///////////////////
 function slide(move) {
 
     var Wrapper = $('.box-wrapp'),
@@ -261,7 +261,7 @@ function slide(move) {
         backNumberItem = backItem.index(),
         slideTime = 700;
 
-
+    console.log(slide)
     if (move == 'next') {
 
         if (!nextItem.length) {
