@@ -254,6 +254,9 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 0;
+    @include phones {
+        top: 55%;
+    }
 }
 
 .box-table {

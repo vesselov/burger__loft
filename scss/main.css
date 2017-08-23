@@ -1741,6 +1741,9 @@ ul {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0; }
+  @media screen and (max-width: 480px) {
+    .box-list {
+      top: 55%; } }
 
 .box-table {
   position: absolute;
