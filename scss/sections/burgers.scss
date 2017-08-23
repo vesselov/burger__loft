@@ -31,8 +31,12 @@
     display: inline-flex;
     position: relative;
     padding-bottom: 5.625rem;
-    @include tablets {}
-    @include phones {}
+    @include tablets {
+        flex-direction: column;
+    }
+    @include phones {
+        padding-bottom: 0;
+    }
 }
 
 .box-right {
@@ -54,7 +58,7 @@
 
 .box-right__title {
     display: inline-block;
-    padding-bottom: 41px;
+    padding-bottom: 48px;
     font-family: "Gagalin", sans-serif;
     font-size: 4.5rem;
     line-height: 3.75rem;
@@ -109,7 +113,7 @@
     background-color: #f08c33;
     border-radius: 3px;
     position: absolute;
-    top: 1px;
+    top: 10px;
     left: -1px;
     &:hover {
         background-color: rgb(227, 80, 40);
@@ -141,7 +145,7 @@
 
 .burger-weight {
     position: absolute;
-    bottom: -47px;
+    bottom: -67px;
     left: 1px;
     width: 65px;
     height: 60px;
@@ -245,7 +249,6 @@
 .box-list {
     white-space: nowrap;
     width: 100%;
-    font-size: 0;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);

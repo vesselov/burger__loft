@@ -1513,6 +1513,15 @@ ul {
   display: inline-flex;
   position: relative;
   padding-bottom: 5.625rem; }
+  @media screen and (max-width: 768px) {
+    .box-list__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media screen and (max-width: 480px) {
+    .box-list__item {
+      padding-bottom: 0; } }
 
 .box-right {
   margin-left: 21px;
@@ -1536,7 +1545,7 @@ ul {
 
 .box-right__title {
   display: inline-block;
-  padding-bottom: 41px;
+  padding-bottom: 48px;
   font-family: "Gagalin", sans-serif;
   font-size: 4.5rem;
   line-height: 3.75rem;
@@ -1600,7 +1609,7 @@ ul {
   background-color: #f08c33;
   border-radius: 3px;
   position: absolute;
-  top: 1px;
+  top: 10px;
   left: -1px; }
   .box-left__ingragients:hover {
     background-color: #e35028; }
@@ -1627,7 +1636,7 @@ ul {
 
 .burger-weight {
   position: absolute;
-  bottom: -47px;
+  bottom: -67px;
   left: 1px;
   width: 65px;
   height: 60px; }
@@ -1727,7 +1736,6 @@ ul {
 .box-list {
   white-space: nowrap;
   width: 100%;
-  font-size: 0;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
