@@ -180,8 +180,6 @@
     opacity: 0.5;
 }
 
-.burger-weight {}
-
 .box-right__order {
     display: inline-flex;
     font-family: "Gagalin", sans-serif;
@@ -193,8 +191,6 @@
 .box-right__price {
     font-size: 4.5rem;
 }
-
-.box-right__btn {}
 
 .box-scroll__img--second {
     transform: rotate(180deg);
@@ -251,7 +247,6 @@
     width: 100%;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 0;
     @include phones {

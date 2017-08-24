@@ -1739,7 +1739,7 @@ ul {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0; }
   @media screen and (max-width: 480px) {
     .box-list {
