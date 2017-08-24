@@ -1484,7 +1484,7 @@ ul {
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%); }
 
 .container--box {
-  width: 80%; }
+  max-width: 63.75rem; }
   @media screen and (max-width: 768px) {
     .container--box {
       width: 95%; } }
@@ -1610,8 +1610,8 @@ ul {
   background-color: #f08c33;
   border-radius: 3px;
   position: absolute;
-  top: 10px;
-  left: -1px; }
+  top: 8px;
+  left: 39px; }
   .box-left__ingragients:hover {
     background-color: #e35028; }
     .box-left__ingragients:hover .box-table {
@@ -1621,7 +1621,8 @@ ul {
       top: 36px; } }
   @media screen and (max-width: 480px) {
     .box-left__ingragients {
-      top: -91px; } }
+      top: -91px;
+      left: 2px; } }
 
 .svg-burger {
   width: 46px;
@@ -1637,8 +1638,8 @@ ul {
 
 .burger-weight {
   position: absolute;
-  bottom: -67px;
-  left: 1px;
+  bottom: -59px;
+  left: 38px;
   width: 65px;
   height: 60px; }
   @media screen and (max-width: 768px) {
@@ -1686,16 +1687,16 @@ ul {
 .box-scroll__img--second {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  right: 6%; }
+  right: 1%; }
 
 .box-scroll__img--first {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  left: 6%; }
+  left: 1%; }
 
 .box-left__pic {
-  margin: 68px 0 0 -34px;
-  max-width: 120%; }
+  margin: 68px 0 0 8px;
+  max-width: 100%; }
   @media screen and (max-width: 768px) {
     .box-left__pic {
       margin: 68px 0 0 0;
@@ -1717,14 +1718,8 @@ ul {
   background: url(../img/content/arrow-scroll.png) no-repeat;
   width: 20px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: absolute;
-  bottom: 47%;
+  bottom: 48%;
   -webkit-transition: .3s;
   transition: .3s;
   z-index: 100;

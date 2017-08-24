@@ -5,7 +5,7 @@
     }
     
     .container--box {
-        width: 80%;
+        max-width: 63.75rem;
         @include tablets {
             width: 95%;
         }
@@ -113,8 +113,8 @@
         background-color: #f08c33;
         border-radius: 3px;
         position: absolute;
-        top: 10px;
-        left: -1px;
+        top: 8px;
+        left: 39px;
         &:hover {
             background-color: rgb(227, 80, 40);
             .box-table {
@@ -126,6 +126,7 @@
         }
         @include phones {
             top: -91px;
+            left: 2px;
         }
     }
     
@@ -145,8 +146,8 @@
     
     .burger-weight {
         position: absolute;
-        bottom: -67px;
-        left: 1px;
+        bottom: -59px;
+        left: 38px;
         width: 65px;
         height: 60px;
         @include tablets {
@@ -194,17 +195,17 @@
     
     .box-scroll__img--second {
         transform: rotate(180deg);
-        right: 6%;
+        right: 1%;
     }
     
     .box-scroll__img--first {
         transform: rotate(0deg);
-        left: 6%;
+        left: 1%;
     }
     
     .box-left__pic {
-        margin: 68px 0 0 -34px;
-        max-width: 120%;
+        margin: 68px 0 0 8px;
+        max-width: 100%;
         @include tablets {
             margin: 68px 0 0 0;
             max-width: 80%;
@@ -229,10 +230,8 @@
         background: url(../img/content/arrow-scroll.png)no-repeat;
         width: 20px;
         height: 30px;
-        display: flex;
-        align-items: center;
         position: absolute;
-        bottom: 47%;
+        bottom: 48%;
         transition: .3s;
         z-index: 100;
         cursor: pointer;
