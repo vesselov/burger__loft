@@ -351,7 +351,8 @@ ul {
   position: absolute;
   bottom: 2.0625rem; }
   .next-page:hover {
-    bottom: 1.6875rem; }
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
 
 .hero__content {
   width: 100%;
@@ -1697,10 +1698,10 @@ ul {
   max-width: 120%; }
   @media screen and (max-width: 768px) {
     .box-left__pic {
-      margin: 68px 0 0 0; } }
+      margin: 68px 0 0 0;
+      max-width: 80%; } }
   @media screen and (max-width: 480px) {
     .box-left__pic {
-      max-width: 80%;
       margin: 0; } }
 
 .box-right__btn {
@@ -1732,6 +1733,9 @@ ul {
     .box-scroll__img {
       bottom: 60%;
       cursor: pointer; } }
+  .box-scroll__img.hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
 
 .box-list {
   white-space: nowrap;

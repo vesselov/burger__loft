@@ -1,280 +1,283 @@
-.burgers {
-    background: #f9b43b;
-    background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
-    background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
-}
-
-.container--box {
-    width: 80%;
-    @include tablets {
-        width: 95%;
+    .burgers {
+        background: #f9b43b;
+        background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
+        background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
     }
-}
-
-.box {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    position: relative;
-}
-
-.box-left,
-.box-right {
-    width: 49%;
-    @include tablets {
-        width: 100%;
-    }
-}
-
-.box-list__item {
-    white-space: normal;
-    display: inline-flex;
-    position: relative;
-    padding-bottom: 5.625rem;
-    @include tablets {
-        flex-direction: column;
-    }
-    @include phones {
-        padding-bottom: 0;
-    }
-}
-
-.box-right {
-    margin-left: 21px;
-    margin-top: -3px;
-    @include tablets {
-        margin: 0;
-        text-align: center;
-    }
-}
-
-.box-left__img {
-    @include tablets {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    }
-}
-
-.box-right__title {
-    display: inline-block;
-    padding-bottom: 48px;
-    font-family: "Gagalin", sans-serif;
-    font-size: 4.5rem;
-    line-height: 3.75rem;
-    vertical-align: top;
-    color: white;
-    @include tablets {
-        padding-bottom: 19px;
-        width: 78%
-    }
-    @include phones {
-        font-size: rem(50px);
-        width: 70%;
-    }
-}
-
-.box-right__desc {
-    padding-bottom: 8px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-    color: white;
-    @include tablets {
-        width: 90%;
-        margin: auto;
-    }
-}
-
-.box-right__price {
-    display: inline-block;
-    font-family: "Gagalin", sans-serif;
-    font-size: 1.875rem;
-    color: #e35028;
-    @include phones {
-        font-size: rem(50px);
-    }
-}
-
-.box-left__made {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.box-left__ingragients {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 90px;
-    background-color: #f08c33;
-    border-radius: 3px;
-    position: absolute;
-    top: 10px;
-    left: -1px;
-    &:hover {
-        background-color: rgb(227, 80, 40);
-        .box-table {
-            left: 90px;
+    
+    .container--box {
+        width: 80%;
+        @include tablets {
+            width: 95%;
         }
     }
-    @include tablets {
-        top: 36px;
+    
+    .box {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        position: relative;
     }
-    @include phones {
-        top: -91px;
+    
+    .box-left,
+    .box-right {
+        width: 49%;
+        @include tablets {
+            width: 100%;
+        }
     }
-}
-
-.svg-burger {
-    width: 46px;
-    height: 44px;
-    fill: #fff;
-}
-
-.box-left__text {
-    padding-top: 0.3125rem;
-    display: inline-block;
-    font-family: "Gagalin", sans-serif;
-    font-size: 0.875rem;
-    color: #fff;
-}
-
-.burger-weight {
-    position: absolute;
-    bottom: -67px;
-    left: 1px;
-    width: 65px;
-    height: 60px;
-    @include tablets {
-        position: absolute;
-        top: 38px;
-        right: 10px;
-        left: initial;
+    
+    .box-list__item {
+        white-space: normal;
+        display: inline-flex;
+        position: relative;
+        padding-bottom: 5.625rem;
+        @include tablets {
+            flex-direction: column;
+        }
+        @include phones {
+            padding-bottom: 0;
+        }
     }
-    @include phones {
-        top: -91px;
+    
+    .box-right {
+        margin-left: 21px;
+        margin-top: -3px;
+        @include tablets {
+            margin: 0;
+            text-align: center;
+        }
     }
-}
-
-.burger-weight__amount {
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-family: 'Gagalin';
-    opacity: 0.5;
-}
-
-.burger-weight__kkal {
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
-    font-family: 'Gagalin';
-    opacity: 0.5;
-}
-
-.box-right__order {
-    display: inline-flex;
-    font-family: "Gagalin", sans-serif;
-    font-size: 1.875rem;
-    color: #e35028;
-    align-items: baseline;
-}
-
-.box-right__price {
-    font-size: 4.5rem;
-}
-
-.box-scroll__img--second {
-    transform: rotate(180deg);
-    right: 6%;
-}
-
-.box-scroll__img--first {
-    transform: rotate(0deg);
-    left: 6%;
-}
-
-.box-left__pic {
-    margin: 68px 0 0 -34px;
-    max-width: 120%;
-    @include tablets {
-        margin: 68px 0 0 0;
+    
+    .box-left__img {
+        @include tablets {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
     }
-    @include phones {
-        max-width: 80%;
-        margin: 0;
+    
+    .box-right__title {
+        display: inline-block;
+        padding-bottom: 48px;
+        font-family: "Gagalin", sans-serif;
+        font-size: 4.5rem;
+        line-height: 3.75rem;
+        vertical-align: top;
+        color: white;
+        @include tablets {
+            padding-bottom: 19px;
+            width: 78%
+        }
+        @include phones {
+            font-size: rem(50px);
+            width: 70%;
+        }
     }
-}
-
-.box-right__btn {
-    margin-left: 28px;
-}
-
-.box-wrapp {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.box-scroll__img {
-    background: url(../img/content/arrow-scroll.png)no-repeat;
-    width: 20px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 47%;
-    transition: .3s;
-    z-index: 100;
-    cursor: pointer;
-    @include phones {
-        bottom: 60%;
+    
+    .box-right__desc {
+        padding-bottom: 8px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: white;
+        @include tablets {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    
+    .box-right__price {
+        display: inline-block;
+        font-family: "Gagalin", sans-serif;
+        font-size: 1.875rem;
+        color: #e35028;
+        @include phones {
+            font-size: rem(50px);
+        }
+    }
+    
+    .box-left__made {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .box-left__ingragients {
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        background-color: #f08c33;
+        border-radius: 3px;
+        position: absolute;
+        top: 10px;
+        left: -1px;
+        &:hover {
+            background-color: rgb(227, 80, 40);
+            .box-table {
+                left: 90px;
+            }
+        }
+        @include tablets {
+            top: 36px;
+        }
+        @include phones {
+            top: -91px;
+        }
     }
-}
-
-.box-list {
-    white-space: nowrap;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    @include phones {
-        top: 55%;
+    
+    .svg-burger {
+        width: 46px;
+        height: 44px;
+        fill: #fff;
     }
-}
-
-.box-table {
-    position: absolute;
-    top: 0px;
-    left: -99999px;
-    z-index: 5;
-    font-family: Ubuntu, sans-serif;
-    font-size: 0.875rem;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.9;
-    padding: 1.25rem;
-    border-radius: 0.3125rem;
-}
-
-.table__call {
-    padding-right: 60px;
-}
-
-.table__img {
-    padding-right: 20px;
-}
-
-.table__row {
-    height: 45px;
-}
+    
+    .box-left__text {
+        padding-top: 0.3125rem;
+        display: inline-block;
+        font-family: "Gagalin", sans-serif;
+        font-size: 0.875rem;
+        color: #fff;
+    }
+    
+    .burger-weight {
+        position: absolute;
+        bottom: -67px;
+        left: 1px;
+        width: 65px;
+        height: 60px;
+        @include tablets {
+            position: absolute;
+            top: 38px;
+            right: 10px;
+            left: initial;
+        }
+        @include phones {
+            top: -91px;
+        }
+    }
+    
+    .burger-weight__amount {
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-family: 'Gagalin';
+        opacity: 0.5;
+    }
+    
+    .burger-weight__kkal {
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        font-family: 'Gagalin';
+        opacity: 0.5;
+    }
+    
+    .box-right__order {
+        display: inline-flex;
+        font-family: "Gagalin", sans-serif;
+        font-size: 1.875rem;
+        color: #e35028;
+        align-items: baseline;
+    }
+    
+    .box-right__price {
+        font-size: 4.5rem;
+    }
+    
+    .box-scroll__img--second {
+        transform: rotate(180deg);
+        right: 6%;
+    }
+    
+    .box-scroll__img--first {
+        transform: rotate(0deg);
+        left: 6%;
+    }
+    
+    .box-left__pic {
+        margin: 68px 0 0 -34px;
+        max-width: 120%;
+        @include tablets {
+            margin: 68px 0 0 0;
+            max-width: 80%;
+        }
+        @include phones {
+            margin: 0;
+        }
+    }
+    
+    .box-right__btn {
+        margin-left: 28px;
+    }
+    
+    .box-wrapp {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .box-scroll__img {
+        background: url(../img/content/arrow-scroll.png)no-repeat;
+        width: 20px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 47%;
+        transition: .3s;
+        z-index: 100;
+        cursor: pointer;
+        @include phones {
+            bottom: 60%;
+            cursor: pointer;
+        }
+        &.hover {
+            transform: scale(1.5);
+        }
+    }
+    
+    .box-list {
+        white-space: nowrap;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        @include phones {
+            top: 55%;
+        }
+    }
+    
+    .box-table {
+        position: absolute;
+        top: 0px;
+        left: -99999px;
+        z-index: 5;
+        font-family: Ubuntu, sans-serif;
+        font-size: 0.875rem;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.9;
+        padding: 1.25rem;
+        border-radius: 0.3125rem;
+    }
+    
+    .table__call {
+        padding-right: 60px;
+    }
+    
+    .table__img {
+        padding-right: 20px;
+    }
+    
+    .table__row {
+        height: 45px;
+    }

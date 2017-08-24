@@ -109,12 +109,9 @@
     position: absolute;
     bottom: rem(33px);
     &:hover {
-        bottom: rem(27px);
+        transform: scale(1.5);
     }
-    @include phones {}
 }
-
-.next-page__item {}
 
 .hero__content {
     width: 100%;

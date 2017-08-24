@@ -3,17 +3,17 @@ Error: Undefined mixin 'tablets'.
         on line 9 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\burgers.scss, in `tablets'
         from line 9 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\burgers.scss
 
-4:     background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
-5: }
-6: 
-7: .container--box {
-8:     width: 80%;
-9:     @include tablets {
-10:         width: 95%;
-11:     }
-12: }
-13: 
-14: .box {
+4:         background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
+5:     }
+6:     
+7:     .container--box {
+8:         width: 80%;
+9:         @include tablets {
+10:             width: 95%;
+11:         }
+12:     }
+13:     
+14:     .box {
 
 Backtrace:
 C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\burgers.scss:9:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 9 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\burgers.scss, in `tablets'\A         from line 9 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\burgers.scss\A \A 4:     background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);\A 5: }\A 6: \A 7: .container--box {\A 8:     width: 80%;\A 9:     @include tablets {\A 10:         width: 95%;\A 11:     }\A 12: }\A 13: \A 14: .box {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 9 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\burgers.scss, in `tablets'\A         from line 9 of C:\Users\Bonnita\Desktop\projekt\burger__loft\scss\sections\burgers.scss\A \A 4:         background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);\A 5:     }\A 6:     \A 7:     .container--box {\A 8:         width: 80%;\A 9:         @include tablets {\A 10:             width: 95%;\A 11:         }\A 12:     }\A 13:     \A 14:     .box {"; }
