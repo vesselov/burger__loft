@@ -269,7 +269,7 @@ function slide(move) {
             nextNumberItem = nextItem.index();
         }
         var next = -nextNumberItem * 100 + '%';
-        list.stop(true).animate({
+        list.stop(true).css({
             'left': next
         }, slideTime, function() {
             active.removeClass('active');
@@ -285,7 +285,7 @@ function slide(move) {
         }
         var back = -backNumberItem * 100 + '%';
 
-        list.stop(true).animate({
+        list.stop(true).css({
             'left': back
         }, slideTime, function() {
             active.removeClass('active');
