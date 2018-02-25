@@ -200,12 +200,12 @@ var myMap;
 
 function init() {
     myMap = new ymaps.Map("map", {
-        center: [59.88, 30.54],
-        zoom: 11,
+        center: [47.09, 51.92],
+        zoom: 12,
         controls: []
     });
 
-    myPlacemark = new ymaps.Placemark([59.88, 30.54], {
+    myPlacemark = new ymaps.Placemark([47.08, 51.55], {
         hintContent: 'привет',
         balloonContent: 'Бургеры тут'
     }, {
@@ -217,7 +217,7 @@ function init() {
         iconImageSize: [46, 57],
         iconImageOffset: [-22, -57]
     });
-    myPlacemark2 = new ymaps.Placemark([59.89, 30.25], {
+    myPlacemark2 = new ymaps.Placemark([47.09, 51.89], {
         hintContent: 'привет',
         balloonContent: 'бургеры тут'
     }, {
@@ -229,7 +229,7 @@ function init() {
         iconImageSize: [46, 57],
         iconImageOffset: [-22, -57]
     });
-    myPlacemark3 = new ymaps.Placemark([59.91, 30.45], {
+    myPlacemark3 = new ymaps.Placemark([47.10, 51.93], {
         hintContent: 'привет',
         balloonContent: 'бургеры тут'
     }, {
