@@ -1621,7 +1621,7 @@ ul {
       top: 36px; } }
   @media screen and (max-width: 480px) {
     .box-left__ingragients {
-      top: -91px;
+      top: -47px;
       left: 2px; } }
 
 .svg-burger {
@@ -1650,7 +1650,7 @@ ul {
       left: initial; } }
   @media screen and (max-width: 480px) {
     .burger-weight {
-      top: -91px; } }
+      top: -47px; } }
 
 .burger-weight__amount {
   position: absolute;
