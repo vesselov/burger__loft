@@ -249,49 +249,49 @@ function init() {
 }
 
 //////-----slider-------------////////////////////
-function slide(move) {
+    function slide(move) {
 
-    var wrapper = $('.box-wrapp'),
-        list = wrapper.find('.box-list'),
-        item = wrapper.find('.box-list__item'),
-        active = item.filter('.active'),
-        nextItem = active.next(),
-        nextNumberItem = nextItem.index(),
-        backItem = active.prev(),
-        backNumberItem = backItem.index(),
-        slideTime = 700;
+        var wrapper = $('.box-wrapp'),
+            list = wrapper.find('.box-list'),
+            item = wrapper.find('.box-list__item'),
+            active = item.filter('.active'),
+            nextItem = active.next(),
+            nextNumberItem = nextItem.index(),
+            backItem = active.prev(),
+            backNumberItem = backItem.index(),
+            slideTime = 1000;
 
 
-    if (move == 'next') {
+        if (move == 'next') {
 
-        if (!nextItem.length) {
-            nextItem = item.first();
-            nextNumberItem = nextItem.index();
+            if (!nextItem.length) {
+                nextItem = item.first();
+                nextNumberItem = nextItem.index();
+            }
+            var next = -nextNumberItem * 100 + '%';
+            list.stop(true).css({
+                'left': next
+            }, slideTime, function() {
+                active.removeClass('active');
+                nextItem.addClass('active');
+            });
         }
-        var next = -nextNumberItem * 100 + '%';
-        list.stop(true).css({
-            'left': next
-        }, slideTime, function() {
-            active.removeClass('active');
-            nextItem.addClass('active');
-        });
-    }
-    if (move == 'back') {
+        if (move == 'back') {
 
-        if (!backItem.length) {
-            backItem = item.last();
-            backNumberItem = backItem.index();
+            if (!backItem.length) {
+                backItem = item.last();
+                backNumberItem = backItem.index();
+            }
+            var back = -backNumberItem * 100 + '%';
+
+            list.stop(true).css({
+                'left': back
+            }, slideTime, function() {
+                active.removeClass('active');
+                backItem.addClass('active');
+            });
         }
-        var back = -backNumberItem * 100 + '%';
-
-        list.stop(true).css({
-            'left': back
-        }, slideTime, function() {
-            active.removeClass('active');
-            backItem.addClass('active');
-        });
     }
-}
 
 
 $('.box-scroll__img--first').on('click', function() {
