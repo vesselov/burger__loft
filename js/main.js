@@ -276,7 +276,6 @@ function slide(move) {
             nextItem.addClass('active');
         });
     }
-
     if (move == 'back') {
 
         if (!backItem.length) {
